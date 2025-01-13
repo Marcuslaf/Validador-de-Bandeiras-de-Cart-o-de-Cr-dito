@@ -97,7 +97,104 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 - [Digital Innovation One](https://www.dio.me/)
 - [Documentação do GitHub Copilot](https://docs.github.com/pt/copilot)
+
+
+# Credit Card Validator
+
+This project was developed as part of the "Creating a Credit Card Flag Validator with GitHub Copilot" challenge from Digital Innovation One (DIO).
+
+## 📝 Description
+
+The project consists of a JavaScript implementation of a credit card validator that:
+- Validates credit card numbers using the Luhn algorithm
+- Identifies the card flag based on the number
+- Supports multiple card flags
+
+## ✨ Features
+
+- Card number validation using the Luhn algorithm
+- Automatic card flag identification
+- Support for multiple flags
+- Automatic whitespace removal
+- Numeric-only input verification
+
+## 🎴 Supported Card Flags
+
+- Visa
+- Mastercard
+- Elo
+- American Express (Amex)
+- Diners Club
+- Discover
+- JCB
+- Enroute
+- Voyager
+- Hipercard
+- Aura
+
+## 🚀 How to Use
+
+1. Include the functions in your project:
+
+```javascript
+const cardNumber = "5079 9847 9644 7266";
+const result = validateCreditCard(cardNumber);
+console.log(`Valid: \${result.valid}, Flag: \${result.flag}`);
 ```
 
----
-⌨️ com ❤️ por [Seu Nome] 😊
+2. The function returns an object with two properties:
+   - `valid`: boolean indicating if the number is valid
+   - `flag`: string with the flag name or null if not identified
+
+## 📋 Usage Example
+
+```javascript
+// Example with valid card
+const cardNumber1 = "4532 7153 3790 1241";
+console.log(validateCreditCard(cardNumber1));
+// Output: { valid: true, flag: "visa" }
+
+// Example with invalid card
+const cardNumber2 = "1234 5678 9012 3456";
+console.log(validateCreditCard(cardNumber2));
+// Output: { valid: false, flag: null }
+```
+
+## 🔍 Code Structure
+
+The project consists of two main functions:
+
+1. `validateCreditCard(number)`: Main function that validates the card number
+   - Removes whitespace
+   - Checks if it contains only digits
+   - Applies the Luhn algorithm
+   - Returns object with validation result and flag
+
+2. `identifyFlag(number)`: Helper function that identifies the flag
+   - Uses regular expressions to identify patterns
+   - Supports multiple flags
+   - Returns the flag name or null
+
+## 🛠️ Technologies Used
+
+- JavaScript
+- Regular Expressions (RegEx)
+- GitHub Copilot
+
+## ✅ Prerequisites
+
+- JavaScript ES6+
+- Basic knowledge of functions and regular expressions
+
+## 👥 Author
+
+Marcus Lafaiete
+
+## 📄 License
+
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
+
+## 🔗 Useful Links
+
+- [Digital Innovation One](https://www.dio.me/)
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
