@@ -89,10 +89,6 @@ O projeto consiste em duas funções principais:
 
 Marcus Lafaiete
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ## 🔗 Links Úteis
 
 - [Digital Innovation One](https://www.dio.me/)
@@ -189,10 +185,6 @@ The project consists of two main functions:
 ## 👥 Author
 
 Marcus Lafaiete
-
-## 📄 License
-
-This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 ## 🔗 Useful Links
 
